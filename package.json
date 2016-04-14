@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-networkinterface",
+  "version": "1.0.8",
+  "description": "This plugin allows your application to retrieve the local wifi address.",
+  "cordova": {
+    "id": "cordova-plugin-netadvence",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MIt9/cordova-plugin-netadvence.git"
+  },
+  "keywords": [
+    "subnet",
+    "ip",
+    "wifi",
+    "network"
+
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "author": "Dmitrii Bilukha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MIt9/cordova-plugin-netadvence"
+  },
+  "homepage": "https://github.com/MIt9/cordova-plugin-netadvence"
+}
