@@ -4,9 +4,8 @@
 
 - (NSString *)getIP {
 
-    NSString *address = @"error";
     NSString *netmask = @"error";
-    NSString *result = 
+    NSString *address = @"error";
     struct ifaddrs *interfaces = NULL;
     struct ifaddrs *temp_addr = NULL;
     int success = 0;
@@ -21,7 +20,7 @@
                 if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
                     // Get NSString from C String
                     address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
-                    netmask = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_netmask)->sin_addr)];    
+                    netmask = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_netmask)->sin_addr)];
                 }
 
             }
@@ -29,8 +28,8 @@
             temp_addr = temp_addr->ifa_next;
         }
     }
-    // Free memory
     NSString *result = [NSString stringWithFormat:@"%@%@%@", address, @"|", netmask ];
+    // Free memory
     freeifaddrs(interfaces);
     return result;
 
@@ -51,4 +50,3 @@
 }
 
 @end
-

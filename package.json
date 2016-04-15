@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-networkinterface",
   "version": "1.0.8",
-  "description": "This plugin allows your application to retrieve the local wifi address.",
+  "description": "This plugin allows your application to retrieve the local wifi address and subnetmask.",
   "cordova": {
     "id": "cordova-plugin-netadvence",
     "platforms": [
