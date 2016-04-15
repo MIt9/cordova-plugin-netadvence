@@ -17,7 +17,7 @@ The plugin creates the object `networkinterface` with the methods `getIPAddress(
 Example:
 
 	networkinterface.getIPAddress(function (ip) { alert(ip); });
-	networkinterface.getNetmask(function (netmask) { alert(netmask); });
+	networkinterface.getNetmaskNow(function (netmask) { alert(netmask); });
 ## License
 
 The MIT License (MIT)

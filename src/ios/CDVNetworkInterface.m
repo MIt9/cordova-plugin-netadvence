@@ -77,7 +77,7 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-- (void) getNetmask:(CDVInvokedUrlCommand*)command
+- (void) getNetmaskNow:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
     NSString* netmask = [self getNetmask];

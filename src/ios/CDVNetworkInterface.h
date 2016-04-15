@@ -6,5 +6,5 @@
 @interface CDVNetworkInterface : CDVPlugin
 
 - (void) getIPAddress:(CDVInvokedUrlCommand*)command;
-- (void) getNetmask:(CDVInvokedUrlCommand*)command;
+- (void) getNetmaskNow:(CDVInvokedUrlCommand*)command;
 @end
